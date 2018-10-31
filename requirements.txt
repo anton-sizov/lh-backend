@@ -1,0 +1,13 @@
+Django==2.1.2
+djangorestframework==3.8.2
+djangorestframework-jwt==1.11.0
+
+# Debug toolbar
+django-debug-toolbar
+
+# Django admin customization
+django-suit
+
+# Python code style
+flake8
+pylint
