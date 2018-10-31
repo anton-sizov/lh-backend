@@ -1,0 +1,9 @@
+[flake8]
+ignore =
+    # E501: line too long error
+    E501,
+exclude =
+    __pycache__,
+    src/settings/*
+application-import-names = src
+import-order-style = google
