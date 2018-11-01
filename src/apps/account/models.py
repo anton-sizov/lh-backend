@@ -11,9 +11,9 @@ class LHUser(AbstractBaseUser):
         max_length=255,
         unique=True
     )
-    first_name = models.CharField('first name', max_length=30, default='', blank=True)
-    second_name = models.CharField('second name', max_length=30, default='', blank=True)
-    last_name = models.CharField('last name', max_length=30, default='', blank=True)
+    first_name = models.CharField('first name', max_length=30, default='')
+    second_name = models.CharField('second name', max_length=30, default='')
+    last_name = models.CharField('last name', max_length=30, default='')
 
     is_active = models.BooleanField(default=True)
     is_superuser = models.BooleanField(default=False)
