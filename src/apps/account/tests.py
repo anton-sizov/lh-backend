@@ -41,3 +41,9 @@ class AccountTest(BaseTestCase):
             'password_confirm': 'pass54321'
         }
         self.post(url, data, expected_status=status.HTTP_400_BAD_REQUEST)
+
+    def test_login(self):
+        self.get_test_account_token()
+
+    def test_login_fail(self):
+        self.get_api_token('fake', 'fake', status.HTTP_400_BAD_REQUEST)
