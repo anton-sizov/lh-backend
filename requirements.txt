@@ -8,6 +8,10 @@ django-debug-toolbar
 # Django admin customization
 django-suit
 
+# Deploy on Heroku
+gunicorn
+django-heroku
+
 # Python code style
 flake8
 pylint
